@@ -6,3 +6,10 @@ function btnclick(){
     document.getElementById("txtnos").value=res;
 
 }
+
+function getquerystring(){
+const params = new URLSearchParams(window.location.search)
+for (const param of params) {
+  console.log(param)
+}
+}
